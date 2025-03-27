@@ -46,6 +46,10 @@ func ParseJupyterNotebook(inputPath, outputPath string) error {
 		}
 	}
 
+	if err := os.WriteFile(outputPath, []byte(codeBuilder.String()), 0644); err != nil {
+		return fmt.Errorf("error writing output file: %v", err)
+	}
+
 	return nil
 }
 
