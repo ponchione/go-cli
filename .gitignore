@@ -1,0 +1,33 @@
+# .gitignore
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, build artifacts
+*.test
+*.out
+*._obj
+*._test
+*.a
+*.o
+
+# Output of the go coverage tool, acceptable syntax for covering packages
+*.coverprofile
+cover.out
+
+# Dependency directories (should be vendor/ if used)
+# vendor/
+
+# Go workspace file
+go.work
+
+# Environment variables
+.env*
+
+# Compiled binary name (adjust if needed)
+go-cli
+
+.idea
